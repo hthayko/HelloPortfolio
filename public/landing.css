@@ -1,0 +1,98 @@
+html
+{
+	background: #000;
+}
+body {
+    -webkit-animation-delay: 0.1s;
+    -webkit-animation-name: fontfix;
+    -webkit-animation-duration: 0.1s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: linear;
+    padding-top: 10px;
+}
+
+@-webkit-keyframes fontfix {
+    from { opacity: 1; }
+    to   { opacity: 1; }
+}
+
+*, h1, h2
+{
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 100;
+	color: white;
+}
+
+h1, h2
+{
+	text-align: center;
+}
+
+h1
+{
+	font-size: 50px;
+}
+
+h2
+{
+	font-size: 30px;
+	margin-bottom: 40px;
+}
+
+#main
+{
+	text-align: center;
+}
+
+.nice-item
+{
+	width: 450px;
+	height: 300px;
+	display: inline-block;
+	border: 1px solid white;
+	border-radius: 6px;
+	margin: 20px 60px 0 0;
+	cursor: pointer;
+}
+
+.nice-item .screenshot
+{
+	width: 100%;
+	height: 250px;
+	text-align: center;
+	overflow: hidden;
+	border-radius: inherit;	
+}
+
+.nice-item .screenshot img
+{
+	width: 100%;
+}
+
+.nice-item .cover
+{
+	position: relative;
+	top: -302px;
+	height: 250px;
+	opacity: 0;
+	background-color: rgba(0,0,0,0.8);
+	border-radius: inherit;
+}
+
+.nice-item .cover p
+{
+	margin: 0;
+	font-size: 50px;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+/* unvisited link */
+a.nice-item:link, a.nice-item:visited, a.nice-item:hover, a.nice-item:active 
+{
+    text-decoration: none;
+}
+.hide {
+	display: none;
+}
