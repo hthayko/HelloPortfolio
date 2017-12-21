@@ -1,0 +1,95 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+body {
+	-webkit-animation-delay: 0.1s;
+	-webkit-animation-name: fontfix;
+	-webkit-animation-duration: 0.1s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-timing-function: linear;
+}
+
+@-webkit-keyframes fontfix {
+	from { opacity: 1; }
+	to   { opacity: 1; }
+}
+
+*
+{
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 100;
+	margin: 0; padding: 0; border: 0;
+}
+
+#controls
+{ 
+	position: absolute;
+	padding-top: 20px;
+	padding-left: 20px;
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+	top: 0;
+	left: 0;
+	width: 240px;
+	height: 150px;
+}
+#controls div
+{
+	margin-bottom: 20px;
+}
+#controls div p
+{
+	display: inline-block;
+}
+
+#controls div p:first-child
+{
+	width: 60px;
+}
+
+#controls div p:last-child
+{
+	width: 50px;
+}
+
+#controls div.graph-controls p
+{
+	width: 150px;	
+}
+#controls .graph-controls
+{
+	border-top: 1px solid black;
+	padding-top: 10px;
+	margin-right: 20px;
+}
+#controls .graph-controls input[type="number"]
+{
+	width: 50px;
+	height: 20px;
+	font-size: 16px;
+}
+
+#controls .graph-controls input[type="button"]
+{
+	height: 30px;
+	padding: 6px;
+	width: 100px;
+}
+
+#controls input[type="range"] {
+	width: 120px;
+}
+#controls .graph-controls  .styled-file-input input[type="file"]
+{
+	width: 0;
+	position: absolute;
+	height: 0;
+	z-index: -1;
+}
+.hide {
+	display: none;
+}
