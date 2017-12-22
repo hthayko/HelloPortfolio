@@ -1,16 +1,42 @@
+var textures = {};
 
 function initShapes(){
   // geometrys
   geos['sphere'] = new THREE.BufferGeometry();
-  geos['sphere'].fromGeometry( new THREE.SphereGeometry(1,16,16));
+  geos['sphere'].fromGeometry( new THREE.SphereGeometry(12,16,16));
+
+  // geos['sun'] = new THREE.BufferGeometry();
+  // geos['sun'].fromGeometry( new THREE.SphereGeometry(20,64,64));
+
+  for(var p in planets){
+    geos[p] = new THREE.BufferGeometry();
+    geos[p].fromGeometry( new THREE.SphereGeometry(planets[p].radius, 64, 64));
+  }
+
+
   geos['box'] = new THREE.BufferGeometry();
-  geos['box'].fromGeometry( new THREE.BoxGeometry(1,1,1));
+  geos['box'].fromGeometry( new THREE.BoxGeometry(0.1,0.1,1));
+
+  geos['trail'] = new THREE.BufferGeometry();
+  geos['trail'].fromGeometry( new THREE.BoxGeometry(1,1,1));
+
   geos['line'] = new THREE.Geometry();
 
 
   // materials
   mats['sphere'] = new THREE.MeshPhongMaterial( { map: basicTexture(0), name:'sphere' } );
+
+  for(var p in planets){
+    mats[p] = new THREE.MeshLambertMaterial( { map: textures[p], name:p } );
+  }
+
+  mats['sun'] = new THREE.MeshPhongMaterial( { color: 0xffffff, specular: 0x050505, shininess:100, name:'sun' } );
+  mats['sun'].side = THREE.BackSide;
+
   mats['box'] = new THREE.MeshPhongMaterial( { map: basicTexture(2), name:'box' } );
+
+  mats['trail'] = new THREE.MeshBasicMaterial( { color: 0xffffff, name:'trail' } );
+
   mats['ssph'] = new THREE.MeshLambertMaterial( { map: basicTexture(1), name:'ssph' } );
   mats['sbox'] = new THREE.MeshLambertMaterial( { map: basicTexture(3), name:'sbox' } );
   mats['ground'] = new THREE.MeshLambertMaterial( { color: 0x3D4143 } );
@@ -41,7 +67,7 @@ function basicTexture(n){
   var color;
   if(n===0) color = "#3884AA";// sphere58AA80
   if(n===1) color = "#61686B";// sphere sleep
-  if(n===2) color = "#AA6538";// box
+  if(n===2) color = "#ffffff";// box
   if(n===3) color = "#61686B";// box sleep
   ctx.fillStyle = color;
   ctx.fillRect(0, 0, 64, 64);
@@ -111,4 +137,32 @@ function drawAxes(axesNames = ["x", "y", "z"])
     line.updateMatrix();
     scene.add( line );
   }
+}
+
+function loadAssets(callback) {
+  new THREE.TextureLoader().load(`assets/2k_earth.jpg`, function(texture){
+    textures['earth'] = texture;
+    new THREE.TextureLoader().load(`assets/2k_jupiter.jpg`, function(texture){
+      textures['jupiter'] = texture;
+      new THREE.TextureLoader().load(`assets/2k_mars.jpg`, function(texture){
+        textures['mars'] = texture;
+        new THREE.TextureLoader().load(`assets/2k_mercury.jpg`, function(texture){
+          textures['mercury'] = texture;
+          new THREE.TextureLoader().load(`assets/2k_neptune.jpg`, function(texture){
+            textures['neptune'] = texture;
+            new THREE.TextureLoader().load(`assets/2k_saturn.jpg`, function(texture){
+              textures['saturn'] = texture;
+              new THREE.TextureLoader().load(`assets/2k_uranus.jpg`, function(texture){
+                textures['uranus'] = texture;
+                new THREE.TextureLoader().load(`assets/2k_venus.jpg`, function(texture){
+                  textures['venus'] = texture;
+                  callback();
+                });
+              });
+            });    
+          });
+        });
+      });
+    });    
+  });
 }

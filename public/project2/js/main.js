@@ -5,23 +5,40 @@ var isMobile = false;
 var antialias = true;
 var graph;
 var stats;
-
+var iterationNumber = 0;
+var trailCount = 0;
+var gravityConst = 2
 var geos = {};
 var mats = {};
 var spheres = [];
 var updateIntervalHandler;
 
-initShapes();
-init();
-loop();
-startAnimation();
-setupWorld();
+loadAssets(main);
+function main(){
+	initShapes();
+	init();
+	loop();
+	startAnimation();
+	setupWorld();	
+}
 
 function setupWorld() {
-	drawAxes();
+	// drawAxes();
 	// TODO
-	addSphere({x: Math.random()*100, y: Math.random()*100, z: Math.random()*100, 
-						vx: Math.random()*2 - 1, vy: Math.random() * 2 - 1, vz: Math.random() * 2 - 1});	
+	// addSphere({x: Math.random()*100, y: Math.random()*100, z: Math.random()*100, vx: Math.random()*2 - 1, vy: Math.random() * 2 - 1, vz: Math.random() * 2 - 1});	
+	
+	// addSphere({x:50, y: 10, vx: 0, vy: 0, vz:1, mat:"earth"})
+	loadPlanets()
+}
+
+function loadPlanets(){
+	// addSphere({x:0, y:0, z:0, name : "sun"})
+	for(var p in planets){
+		var y = Math.tan(planets[p].tilt * 3.141 / 180) * planets[p].distance
+		var x = planets[p].distance
+		var vz = planets[p].velocity
+		addSphere({x: x, y: y, vz:vz, name:p})
+	}
 }
 
 /*
@@ -47,8 +64,9 @@ function addSphere(params)
 	params.ax = params.ax || 0;
 	params.ay = params.ay || 0;
 	params.az = params.az || 0;
+	params.name = params.name || "sphere";
 
-	var meshTmp = new THREE.Mesh(geos.sphere, mats.sphere);
+	var meshTmp = new THREE.Mesh(geos[params.name], mats[params.name]);
 	meshTmp.position.set(params.x, params.y, params.z)
 	scene.add(meshTmp)
 
@@ -59,7 +77,7 @@ function addSphere(params)
 		a : {x : params.ax, y : params.ay, z : params.az}
 	}
 
-	spheres.push(obj);
+	if(params.name != "sun") spheres.push(obj);
 }
 
 /*
@@ -75,38 +93,60 @@ function startAnimation(){
 */
 function updateScene(){
 	var i, obj, newPosition;
+	iterationNumber = (iterationNumber + 1) % 100000;
 	for(i = 0; i < spheres.length; ++i){
 		obj = spheres[i];
 		newPosition = getPosition(obj);
+		if (iterationNumber % 30 == 0 && trailCount < 2000) addTrail(obj.pos);
 		obj.mesh.position.set(newPosition.x, newPosition.y, newPosition.z)
 		obj.pos = newPosition;
 	}
 }
 
+function addTrail(pos){
+	var meshTmp = new THREE.Mesh(geos.trail, mats.trail);
+	meshTmp.position.set(pos.x, pos.y, pos.z)
+	scene.add(meshTmp)
+	trailCount++;
+	console.log("trail added")
+}
+
 
 /*
 * returns the acceleration, based on 
-* gravity and friction
+* gravity
 */
 function getAcceleration(obj) {
-	return obj.a;
+	var k = obj.pos.x**2 + obj.pos.y**2 + obj.pos.z**2
+	k *= gravityConst
+	var newX = - obj.pos.x / k;
+	var newY = - obj.pos.y / k;
+	var newZ = - obj.pos.z / k;
+	return {x : newX, y : newY, z : newZ};
 }
 
 function getVelocity(obj) {
-	return obj.v;
+	a = getAcceleration(obj);
+	obj.a = a;
+
+	var newX = obj.v.x + a.x;
+	var newY = obj.v.y + a.y;	
+	var newZ = obj.v.z + a.z;	
+
+	return {x : newX, y : newY, z : newZ};
 }
 
 function getPosition(obj) {
 	v = getVelocity(obj);
+	obj.v = v;
 
 	var newX = obj.pos.x + v.x;
 	var newY = obj.pos.y + v.y;	
 	var newZ = obj.pos.z + v.z;	
 	
-	if(newX >= 100 || newX < 0) v.x *= -1;
-	if(newY >= 100 || newY < 0) v.y *= -1;
-	if(newZ >= 100 || newZ < 0) v.z *= -1;
-
+	// if(newX >= 100 || newX <= -100) v.x *= -1;
+	// if(newY >= 100 || newY <= 0) v.y *= -1;
+	// if(newZ >= 100 || newZ <= 0) v.z *= -1;
 	return {x : newX, y : newY, z : newZ}
 }
 

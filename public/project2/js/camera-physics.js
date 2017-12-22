@@ -6,7 +6,7 @@ var infos;
 function init() {
 
 	camera = new THREE.PerspectiveCamera( 60, window.innerWidth / window.innerHeight, 1, 5000 );
-	initCamera(90,60,100);
+	initCamera(90,60,1000);
 
 	scene = new THREE.Scene();
 
@@ -14,8 +14,8 @@ function init() {
 	renderer.setSize( window.innerWidth, window.innerHeight );
 	renderer.autoClear = false;
 	
-	//this.scene.fog = new THREE.Fog( 0x3D4143, 100, 800 );
-	scene.add( new THREE.AmbientLight( 0x3D4143 ) );
+	// this.scene.fog = new THREE.Fog( 0x3D4143, 100, 800 );
+	// scene.add( new THREE.AmbientLight( 0x3D4143 ) );
 	light = new THREE.DirectionalLight( 0xffffff , 1.3);
 	light.position.set( 300, 1000, 500 );
 	light.target.position.set( 0, 0, 0 );
@@ -27,7 +27,13 @@ function init() {
 	light.shadowDarkness = 0.7;
 	//light.shadowCameraVisible = true;
 	light.shadowMapWidth = light.shadowMapHeight = 1024;
-	scene.add( light );
+	// scene.add( light );
+
+
+	sl = new THREE.PointLight( 0xffffff , 2);
+	sl.position.set( 0, 0, 0 );
+	scene.add( sl );
+
 
 	renderer.shadowMapEnabled = true;
 	renderer.shadowMapType = THREE.PCFShadowMap;
@@ -37,7 +43,7 @@ function init() {
 	buffgeoBack.fromGeometry( new THREE.IcosahedronGeometry(3000,1) );
 	var back = new THREE.Mesh( buffgeoBack, new THREE.MeshBasicMaterial( { map:gradTexture([[0.75,0.6,0.4,0.25], ['#1B1D1E','#3D4143','#72797D', '#b0babf']]), side:THREE.BackSide, depthWrite: false, fog:false }  ));
 	back.geometry.applyMatrix(new THREE.Matrix4().makeRotationZ(15*ToRad));
-	scene.add( back );
+	// scene.add( back );
 
 	container = document.getElementById("container");
 	container.appendChild( renderer.domElement );

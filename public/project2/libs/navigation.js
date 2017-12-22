@@ -103,7 +103,7 @@ var onMouseWheel = function (e) {
     else if(e.detail){delta=-e.detail*1.0;}
     camPos.distance -=(delta*10);
     camPos.distance = camPos.distance > 10 ? camPos.distance : 10;
-    camPos.distance = camPos.distance < 300 ? camPos.distance : 300;
+    camPos.distance = camPos.distance < 2000 ? camPos.distance : 2000;
     moveCamera();   
 }
 
