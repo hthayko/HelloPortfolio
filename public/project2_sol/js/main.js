@@ -7,7 +7,7 @@ var graph;
 var stats;
 var iterationNumber = 0;
 var trailCount = 0;
-var gravityConst = 0.5
+var gravityConst = 2
 var geos = {};
 var mats = {};
 var spheres = [];
@@ -23,23 +23,22 @@ function main(){
 }
 
 function setupWorld() {
-	drawAxes();
+	// drawAxes();
+	// TODO
+	// addSphere({x: Math.random()*100, y: Math.random()*100, z: Math.random()*100, vx: Math.random()*2 - 1, vy: Math.random() * 2 - 1, vz: Math.random() * 2 - 1});	
 	
-	addSphere({x:0, y: 100, vx: 0, vy: -1, ay:-0.1})
-
-	// loadPlanets()
+	// addSphere({x:50, y: 10, vx: 0, vy: 0, vz:1, mat:"earth"})
+	loadPlanets()
 }
 
-
 function loadPlanets(){
-	// use variable planets from planets.js
-	// to turn degrees to radian: alpha * Math.PI / 180
-//------------------- BEGIN YOUR CODE
-
-
-
-//------------------- END YOUR CODE
-	// scene.add(spotlight);
+	// addSphere({x:0, y:0, z:0, name : "sun"})
+	for(var p in planets){
+		var y = Math.tan(planets[p].tilt * 3.141 / 180) * planets[p].distance
+		var x = planets[p].distance
+		var vz = planets[p].velocity
+		addSphere({x: x, y: y, vz:vz, name:p})
+	}
 	// scene.remove(light);
 	// scene.remove(ambientLight);
 	// scene.remove(background);
@@ -108,10 +107,11 @@ function updateScene(){
 }
 
 function addTrail(pos){
-	// var meshTmp = new THREE.Mesh(geos.trail, mats.trail);
-	// meshTmp.position.set(pos.x, pos.y, pos.z)
-	// scene.add(meshTmp)
-	// trailCount++;
+	var meshTmp = new THREE.Mesh(geos.trail, mats.trail);
+	meshTmp.position.set(pos.x, pos.y, pos.z)
+	scene.add(meshTmp)
+	trailCount++;
+	console.log("trail added")
 }
 
 
@@ -120,13 +120,23 @@ function addTrail(pos){
 * gravity
 */
 function getAcceleration(obj) {
-	// simulate the gravity force between the object and the origin(sun)
-	// dont forget to multiply by the gravityConst
-	return obj.a
+	var k = obj.pos.x**2 + obj.pos.y**2 + obj.pos.z**2
+	k *= gravityConst
+	var newX = - obj.pos.x / k;
+	var newY = - obj.pos.y / k;
+	var newZ = - obj.pos.z / k;
+	return {x : newX, y : newY, z : newZ};
 }
 
 function getVelocity(obj) {
-	return obj.v;
+	a = getAcceleration(obj);
+	obj.a = a;
+
+	var newX = obj.v.x + a.x;
+	var newY = obj.v.y + a.y;	
+	var newZ = obj.v.z + a.z;	
+
+	return {x : newX, y : newY, z : newZ};
 }
 
 function getPosition(obj) {
@@ -137,6 +147,9 @@ function getPosition(obj) {
 	var newY = obj.pos.y + v.y;	
 	var newZ = obj.pos.z + v.z;	
 	
+	// if(newX >= 100 || newX <= -100) v.x *= -1;
+	// if(newY >= 100 || newY <= 0) v.y *= -1;
+	// if(newZ >= 100 || newZ <= 0) v.z *= -1;
 	return {x : newX, y : newY, z : newZ}
 }
 

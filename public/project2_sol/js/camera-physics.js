@@ -31,8 +31,9 @@ function init() {
 	scene.add( light );
 
 
-	spotLight = new THREE.PointLight( 0xffffff , 2);
-	spotLight.position.set( 0, 0, 0 );
+	sl = new THREE.PointLight( 0xffffff , 2);
+	sl.position.set( 0, 0, 0 );
+	scene.add( sl );
 
 
 	renderer.shadowMapEnabled = true;
