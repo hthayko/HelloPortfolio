@@ -1,3 +1,84 @@
-<h2 style="text-align: center;"">
-  There will be an awesome project here!
-</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>3D graphs</title>
+<link rel="shortcut icon" href="icon.ico">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=11" />
+<link rel="stylesheet" href="css/custom.css">
+
+</head>
+<body>
+<div id='container'></div>
+<div id='controls'>
+  <div class="control-slider">    
+    <p>Friction</p>
+    <input type="range" data-to-change="friction" id="friction" value="5" min="0" max="10" step="1">
+    <p>5</p>
+  </div>
+  <div class="control-slider">
+    <p>Mass</p>
+    <input type="range" data-to-change="mass" id="mass" value="5" min="1" max="100" step="1">
+    <p>5</p>
+  </div>
+  <div class="control-slider">
+    <p>Charge</p>
+    <input type="range" data-to-change="charge" id="charge" value="4000" min="0" max="10000" step="100">
+    <p>4000</p>
+  </div>
+  <div class="control-slider">
+    <p>Tension</p>
+    <input type="range" data-to-change="tension" id="tension" value="30" min="1" max="200" step="1">
+    <p>30</p>
+  </div>  
+  <div class="graph-controls">
+    <div>
+      <p>Number of Vertices</p> <input type="number" id="nodesCount" value="10">
+    </div>
+    <div>
+      <p>Number of Edges</p> <input type="number" id="edgesCount" value="20">
+    </div>
+    <div>
+      <p>Number of Clusters</p> <input type="number" id="clustersCount" value="2">
+    </div>
+
+    <input type="button" id="graph-generator" value="Generate Graph"/>
+  </div>
+  <div class="graph-controls">
+    <div>    
+      <p>Clusters count</p>
+      <input type="number" id="cluster-size" min="2" max="10" value="4"/>
+    </div>
+    <input type="button" id="clusterifier" value="Clusterify"/>
+  </div>  
+
+  <div class="graph-controls">
+    <div class="styled-file-input">
+      <input type="file" id="graph-loader"/>
+      <input type="button" id="graph-loader-fake" value="Load Graph"/>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+<script src="libs/csv_reader_dist.js"></script>
+<script src="libs/three.min.js"></script>
+<script src="libs/helvetiker_regular.typeface.js"></script>
+<script src="libs/navigation.js"></script>
+<script src="libs/stats.min.js"></script>
+
+<script src='https://code.jquery.com/jquery-2.1.3.min.js'></script>
+<script src="js/geoHelper.js"></script>
+<script src="js/graphUtils.js"></script>
+<script src="js/graphConstructor.js"></script>
+<script src="js/camera-physics.js"></script>
+<script src="js/graph-physics.js"></script>
+<script src="js/clusterifier.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,399 @@
+8 19
+8 20
+25 31
+49 51
+45 73
+52 74
+64 80
+64 82
+19 85
+38 87
+20 86
+86 87
+85 86
+86 88
+85 87
+85 88
+34 99
+42 89
+89 101
+89 105
+42 101
+101 102
+27 144
+45 77
+47 143
+45 160
+67 90
+63 101
+64 73
+58 193
+117 200
+58 90
+68 191
+14 178
+178 191
+157 178
+68 157
+67 195
+60 229
+1 229
+219 232
+82 118
+108 129
+179 240
+46 217
+162 216
+134 213
+53 173
+146 260
+118 146
+118 244
+93 263
+223 264
+58 264
+18 146
+39 157
+64 264
+5 143
+132 243
+240 267
+53 195
+193 267
+112 202
+27 62
+3 31
+64 223
+44 121
+93 184
+93 256
+93 199
+184 277
+184 256
+184 263
+158 184
+256 263
+199 256
+199 263
+239 256
+158 166
+166 184
+166 231
+158 231
+170 231
+195 231
+170 195
+53 93
+96 164
+118 253
+67 231
+93 173
+264 283
+171 231
+170 260
+193 268
+86 243
+93 241
+39 178
+64 121
+136 186
+64 189
+146 244
+80 236
+86 132
+48 256
+;
+0 , Tim Roth
+1 , Antonio Banderas
+2 , Bruce Willis
+3 , Emilio Estevez
+4 , Cuba Gooding Jr.
+5 , Jeremy Piven
+6 , Albert Brooks
+7 , Willem Dafoe
+8 , Geoffrey Rush
+9 , Eric Bana
+10 , Tom Hanks
+11 , Gary Sinise
+12 , Kevin Spacey
+13 , Chris Cooper
+14 , Gary Oldman
+15 , Ian Holm
+16 , Chris Tucker
+17 , Alfred Molina
+18 , Mark Ruffalo
+19 , Johnny Depp
+20 , Orlando Bloom
+21 , Jamie Foxx
+22 , Jake Gyllenhaal
+23 , Peter Sarsgaard
+24 , John Krasinski
+25 , Martin Sheen
+26 , Marlon Brando
+27 , Robert Duvall
+28 , Laurence Fishburne
+29 , Harrison Ford
+30 , Dennis Hopper
+31 , Charlie Sheen
+32 , Clint Eastwood
+33 , Gene Hackman
+34 , Morgan Freeman
+35 , Richard Harris
+36 , Kelsey Grammer
+37 , Jim Carrey
+38 , Elijah Wood
+39 , Bill Nighy
+40 , Viggo Mortensen
+41 , Ed Harris
+42 , Brad Pitt
+43 , Christopher Plummer
+44 , Richard Jenkins
+45 , Robert De Niro
+46 , Tom Cruise
+47 , Tim Robbins
+48 , Channing Tatum
+49 , Jack Nicholson
+50 , Pierce Brosnan
+51 , Danny DeVito
+52 , Michael J. Fox
+53 , Jack Black
+54 , Guy Pearce
+55 , Joe Pantoliano
+56 , Rutger Hauer
+57 , Colin Farrell
+58 , Dan Aykroyd
+59 , Sean Connery
+60 , Eddie Murphy
+61 , Damon Wayans
+62 , Billy Bob Thornton
+63 , Ben Affleck
+64 , Steve Buscemi
+65 , Michael Clarke Duncan
+66 , Peter Stormare
+67 , Owen Wilson
+68 , Jason Isaacs
+69 , Russell Crowe
+70 , Joaquin Phoenix
+71 , Djimon Hounsou
+72 , Jean Reno
+73 , Harvey Keitel
+74 , Christopher Lloyd
+75 , Billy Zane
+76 , Jason Statham
+77 , Al Pacino
+78 , Robert Loggia
+79 , Jeff Bridges
+80 , John Goodman
+81 , Philip Seymour Hoffman
+82 , John Turturro
+83 , Sam Elliott
+84 , Kevin Costner
+85 , Christopher Lee
+86 , Ian McKellen
+87 , Hugo Weaving
+88 , Andy Serkis
+89 , George Clooney
+90 , Bill Murray
+91 , Michael Shannon
+92 , Patrick Swayze
+93 , Seth Rogen
+94 , Heath Ledger
+95 , Randy Quaid
+96 , Nick Nolte
+97 , Giovanni Ribisi
+98 , Christian Bale
+99 , Michael Caine
+100 , Aaron Eckhart
+101 , Matt Damon
+102 , Casey Affleck
+103 , Scott Caan
+104 , Bernie Mac
+105 , Don Cheadle
+106 , Alan Arkin
+107 , Vincent Cassel
+108 , Danny Glover
+109 , Bill Paxton
+110 , Christian Slater
+111 , Cary Elwes
+112 , Robin Williams
+113 , Tommy Lee Jones
+114 , Lloyd Bridges
+115 , Forest Whitaker
+116 , Max von Sydow
+117 , Tobey Maguire
+118 , Samuel L. Jackson
+119 , Michael Keaton
+120 , Ben Kingsley
+121 , Stanley Tucci
+122 , Clive Owen
+123 , Mickey Rourke
+124 , Michael Madsen
+125 , Josh Brolin
+126 , Joseph Gordon-Levitt
+127 , Ray Liotta
+128 , Ron Perlman
+129 , Mel Gibson
+130 , Brendan Gleeson
+131 , Brian Cox
+132 , Patrick Stewart
+133 , Tom Hardy
+134 , Ray Winstone
+135 , John Hurt
+136 , Arnold Schwarzenegger
+137 , Matt Dillon
+138 , Mark Strong
+139 , Nicolas Cage
+140 , Chris Penn
+141 , Kiefer Sutherland
+142 , Richard Dreyfuss
+143 , John Cusack
+144 , James Caan
+145 , Woody Harrelson
+146 , Robert Downey Jr.
+147 , Tom Sizemore
+148 , Rodney Dangerfield
+149 , Michael Douglas
+150 , Adrien Brody
+151 , Jerry Lewis
+152 , Liam Neeson
+153 , Anthony Hopkins
+154 , Ted Levine
+155 , William H. Macy
+156 , Michael Sheen
+157 , Ralph Fiennes
+158 , Steve Carell
+159 , James Woods
+160 , Joe Pesci
+161 , Christopher Walken
+162 , James Gandolfini
+163 , Val Kilmer
+164 , Sean Penn
+165 , Kevin Bacon
+166 , David Koechner
+167 , Sam Neill
+168 , Jeff Goldblum
+169 , Pete Postlethwaite
+170 , Vince Vaughn
+171 , John C. Reilly
+172 , Gabriel Byrne
+173 , Dustin Hoffman
+174 , Denzel Washington
+175 , Kevin Kline
+176 , Colin Firth
+177 , James McAvoy
+178 , Michael Gambon
+179 , John Leguizamo
+180 , Dennis Quaid
+181 , Rhys Ifans
+182 , Peter Dinklage
+183 , Leonardo DiCaprio
+184 , Paul Rudd
+185 , Donald Sutherland
+186 , Sylvester Stallone
+187 , Gene Wilder
+188 , John Malkovich
+189 , Sam Rockwell
+190 , Kurt Russell
+191 , Alan Rickman
+192 , Alec Baldwin
+193 , John Candy
+194 , Sam Worthington
+195 , Ben Stiller
+196 , Robert Redford
+197 , Edward Norton
+198 , Leslie Nielsen
+199 , James Franco
+200 , J.K. Simmons
+201 , Thomas Haden Church
+202 , Billy Crystal
+203 , John Michael Higgins
+204 , Ewan McGregor
+205 , Jeff Daniels
+206 , Gregory Peck
+207 , Will Smith
+208 , Daniel Craig
+209 , Rick Moranis
+210 , Frank Langella
+211 , Chazz Palminteri
+212 , Paul Newman
+213 , Jude Law
+214 , Kenneth Branagh
+215 , Jon Voight
+216 , John Travolta
+217 , Ving Rhames
+218 , Matthew McConaughey
+219 , Jack Lemmon
+220 , Gerard Butler
+221 , Michael Imperioli
+222 , Tim Curry
+223 , Rob Schneider
+224 , Greg Kinnear
+225 , Daniel Day-Lewis
+226 , Rainn Wilson
+227 , Tom Berenger
+228 , Liev Schreiber
+229 , Mike Myers
+230 , John Lithgow
+231 , Will Ferrell
+232 , Walter Matthau
+233 , Ty Burrell
+234 , Vin Diesel
+235 , Paul Giamatti
+236 , Mark Wahlberg
+237 , James Gammon
+238 , Martin Lawrence
+239 , Justin Long
+240 , Seann William Scott
+241 , Will Arnett
+242 , Sacha Baron Cohen
+243 , Hugh Jackman
+244 , Chris Evans
+245 , Michael Fassbender
+246 , Steve Zahn
+247 , James Marsden
+248 , Jeremy Irons
+249 , Elias Koteas
+250 , Javier Bardem
+251 , Oliver Platt
+252 , Steve Martin
+253 , Jeremy Renner
+254 , Idris Elba
+255 , Richard Gere
+256 , Jonah Hill
+257 , Brendan Fraser
+258 , Wesley Snipes
+259 , Jackie Earle Haley
+260 , Jon Favreau
+261 , Dwayne Johnson
+262 , John Ritter
+263 , Bill Hader
+264 , Adam Sandler
+265 , Matthew Perry
+266 , Ryan Reynolds
+267 , Eugene Levy
+268 , Chevy Chase
+269 , Bradley Cooper
+270 , Jason Bateman
+271 , Burt Reynolds
+272 , Mandy Patinkin
+273 , Ed Helms
+274 , Rob Corddry
+275 , Ryan Gosling
+276 , Luke Wilson
+277 , Jason Segel
+278 , Jeffrey Dean Morgan
+279 , James Garner
+280 , Clark Gable
+281 , Zach Galifianakis
+282 , Chris Pine
+283 , Chris Farley
+284 , Ryan Stiles
+285 , Humphrey Bogart
+286 , Jon Cryer
+287 , Michael C. Hall
+288 , Larry David
+289 , Tom Hiddleston
+290 , Dudley Moore
+291 , Christoph Waltz
+292 , Jean Dujardin
+293 , Sharlto Copley

@@ -23,11 +23,11 @@ function main(){
 }
 
 function setupWorld() {
-	drawAxes();
+	// drawAxes();
 	
-	addSphere({x:0, y: 100, vx: 0, vy: -1, ay:-0.1})
+	// addSphere({x:0, y: 100, vx: 1})
 
-	// loadPlanets()
+	loadPlanets()
 }
 
 
@@ -35,14 +35,20 @@ function loadPlanets(){
 	// use variable planets from planets.js
 	// to turn degrees to radian: alpha * Math.PI / 180
 //------------------- BEGIN YOUR CODE
-
-
+	
+	for(var p in planets){
+		// var y = Math.tan(planets[p].tilt * 3.141 / 180) * planets[p].distance
+		var y = 0
+		var x = planets[p].distance
+		var vz = planets[p].velocity
+		addSphere({x: x, y: y, vz:vz, name:p})
+	}
 
 //------------------- END YOUR CODE
-	// scene.add(spotlight);
-	// scene.remove(light);
-	// scene.remove(ambientLight);
-	// scene.remove(background);
+	scene.add(spotLight);
+	scene.remove(light);
+	scene.remove(ambientLight);
+	scene.remove(background);
 }
 
 /*
@@ -108,10 +114,10 @@ function updateScene(){
 }
 
 function addTrail(pos){
-	// var meshTmp = new THREE.Mesh(geos.trail, mats.trail);
-	// meshTmp.position.set(pos.x, pos.y, pos.z)
-	// scene.add(meshTmp)
-	// trailCount++;
+	var meshTmp = new THREE.Mesh(geos.trail, mats.trail);
+	meshTmp.position.set(pos.x, pos.y, pos.z)
+	scene.add(meshTmp)
+	trailCount++;
 }
 
 
@@ -122,11 +128,28 @@ function addTrail(pos){
 function getAcceleration(obj) {
 	// simulate the gravity force between the object and the origin(sun)
 	// dont forget to multiply by the gravityConst
-	return obj.a
+//------------------- BEGIN YOUR CODE
+	var r2 = obj.pos.x**2 + obj.pos.y**2 + obj.pos.z**2;
+	var newX = - gravityConst * obj.pos.x / r2;
+	var newY = - gravityConst * obj.pos.y / r2;
+	var newZ = - gravityConst * obj.pos.z / r2;	
+
+	return {x : newX, y : newY, z : newZ}
+//------------------- END YOUR CODE	
 }
 
 function getVelocity(obj) {
-	return obj.v;
+//------------------- BEGIN YOUR CODE
+	a = getAcceleration(obj);
+	obj.a = a;
+
+	var newX = obj.v.x + a.x;
+	var newY = obj.v.y + a.y;	
+	var newZ = obj.v.z + a.z;	
+	
+	return {x : newX, y : newY, z : newZ}
+
+//------------------- END YOUR CODE	
 }
 
 function getPosition(obj) {

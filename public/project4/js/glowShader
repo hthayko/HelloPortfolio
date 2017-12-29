@@ -1,0 +1,29 @@
+precision mediump float;
+
+varying vec2 position;
+uniform float time;
+uniform vec2 resolution;
+float sqr(float a);
+
+void main() {
+  float x = position.x * resolution.x;
+  float y = position.y * resolution.y;
+  float x0 = resolution.x / 2.0;
+  float y0 = resolution.y / 2.0;
+  float pos_color = (sqr(x-x0) + sqr(y-y0));
+  float radius = 10000.0;
+  pos_color = min(pos_color, radius);
+  pos_color = 1.0 - sqrt(pos_color/radius);
+  float time_color = cos(time*6.0);
+//    float time_color = 1.0;
+  
+  gl_FragColor.r = pos_color * time_color;
+  gl_FragColor.g = pos_color * time_color;
+  gl_FragColor.b = pos_color * time_color;
+  gl_FragColor.a = 1.0;
+}
+
+float sqr(float a)
+{
+  return a*a;
+}

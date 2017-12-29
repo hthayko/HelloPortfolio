@@ -1,0 +1,889 @@
+10 11
+8 19
+19 20
+8 20
+13 21
+13 22
+25 26
+25 28
+25 31
+26 27
+26 30
+27 30
+28 30
+32 33
+32 34
+33 34
+19 39
+2 42
+33 41
+49 51
+2 62
+2 64
+2 65
+64 66
+66 68
+45 73
+52 74
+64 80
+80 82
+64 82
+19 85
+38 86
+20 38
+38 40
+38 87
+38 85
+38 88
+15 38
+20 86
+40 86
+86 87
+85 86
+86 88
+15 86
+20 40
+20 87
+20 85
+20 88
+15 20
+40 87
+40 85
+40 88
+85 87
+87 88
+15 87
+85 88
+15 85
+15 88
+98 99
+14 98
+34 98
+14 99
+34 99
+34 100
+14 34
+42 89
+89 101
+89 102
+89 103
+89 104
+89 105
+42 101
+42 102
+42 103
+42 104
+42 105
+101 102
+101 103
+101 104
+101 105
+102 103
+102 104
+102 105
+103 104
+103 105
+104 105
+101 107
+66 116
+118 119
+2 34
+2 121
+2 123
+125 126
+5 127
+134 135
+109 136
+3 46
+13 101
+77 144
+27 77
+27 144
+45 77
+27 45
+145 146
+113 145
+53 143
+47 143
+47 53
+51 149
+34 152
+39 156
+37 158
+45 160
+14 110
+110 163
+110 140
+14 30
+30 161
+30 163
+140 161
+42 118
+42 162
+147 163
+118 168
+81 155
+81 171
+17 19
+64 74
+64 161
+7 90
+67 90
+90 168
+7 67
+7 168
+168 178
+152 157
+63 101
+63 102
+143 188
+143 164
+173 188
+64 73
+39 152
+39 191
+152 191
+49 74
+51 74
+58 193
+7 161
+7 117
+117 199
+117 200
+7 199
+7 200
+199 200
+11 41
+70 102
+80 202
+45 173
+78 168
+28 87
+113 207
+90 165
+58 90
+90 209
+196 212
+135 191
+68 191
+14 191
+14 178
+178 191
+157 178
+157 191
+130 157
+14 157
+68 157
+130 178
+68 178
+130 191
+68 130
+14 68
+147 215
+58 192
+2 216
+2 118
+118 217
+64 118
+2 73
+64 217
+45 195
+173 195
+67 195
+45 67
+161 168
+73 89
+118 221
+106 158
+31 227
+7 227
+7 19
+112 115
+12 34
+60 229
+1 229
+1 60
+36 132
+110 231
+51 216
+12 51
+84 113
+14 165
+165 193
+219 232
+29 142
+105 164
+10 235
+17 64
+173 196
+67 212
+10 119
+10 202
+10 80
+82 118
+108 129
+129 160
+108 160
+154 215
+179 240
+195 242
+46 217
+193 209
+43 99
+88 243
+101 192
+45 82
+82 160
+162 216
+134 213
+71 156
+105 118
+130 152
+7 123
+81 197
+51 159
+210 247
+128 135
+141 251
+165 251
+209 252
+253 254
+173 213
+53 173
+19 82
+171 183
+112 195
+67 112
+138 176
+12 185
+141 185
+164 171
+139 143
+139 217
+64 139
+64 143
+82 221
+118 258
+18 162
+146 260
+118 146
+118 260
+118 244
+113 118
+93 263
+223 264
+58 264
+82 87
+118 204
+85 118
+7 213
+18 146
+18 249
+27 146
+57 153
+43 57
+39 157
+82 264
+64 264
+5 143
+2 265
+228 243
+132 243
+159 192
+81 192
+240 267
+145 268
+27 95
+13 44
+89 171
+44 80
+71 190
+53 195
+53 171
+64 96
+38 64
+81 185
+179 251
+192 251
+63 84
+34 256
+123 147
+13 131
+147 227
+193 267
+112 202
+121 202
+158 256
+80 273
+256 273
+131 188
+27 62
+118 143
+235 251
+3 25
+3 31
+12 192
+64 223
+31 124
+90 276
+21 270
+44 121
+62 251
+67 150
+90 150
+51 73
+240 261
+99 185
+42 200
+93 184
+93 256
+93 158
+93 199
+184 277
+184 256
+184 263
+158 184
+184 199
+256 277
+256 263
+199 256
+199 263
+143 251
+178 181
+170 203
+32 185
+95 268
+192 195
+118 139
+33 162
+14 111
+51 136
+55 65
+79 110
+53 184
+239 256
+184 273
+158 166
+166 184
+93 166
+113 125
+125 199
+200 270
+195 263
+195 270
+53 218
+263 270
+118 234
+63 270
+2 96
+44 192
+121 236
+121 204
+15 121
+1 64
+13 45
+117 183
+66 139
+110 155
+175 214
+184 231
+166 231
+158 231
+170 231
+231 276
+195 231
+93 231
+170 184
+166 276
+170 195
+53 93
+145 164
+96 164
+96 143
+143 171
+145 249
+96 145
+145 171
+229 283
+33 108
+82 121
+207 238
+162 174
+28 179
+48 126
+62 143
+274 281
+58 268
+179 258
+118 253
+155 189
+27 216
+67 170
+67 231
+170 270
+83 200
+39 181
+4 110
+170 247
+67 276
+108 276
+192 276
+90 192
+108 192
+34 111
+34 131
+82 174
+170 239
+1 109
+10 246
+93 173
+12 219
+123 161
+50 224
+171 175
+73 197
+45 202
+58 283
+264 283
+195 264
+118 235
+252 267
+97 103
+1 186
+139 199
+171 231
+171 242
+170 260
+260 270
+33 147
+166 241
+108 168
+184 270
+82 179
+227 237
+231 241
+231 274
+147 186
+8 167
+39 204
+39 88
+5 260
+241 263
+105 146
+125 164
+70 164
+145 258
+226 241
+220 256
+153 289
+254 289
+118 289
+253 289
+153 254
+121 175
+44 175
+121 189
+62 109
+89 90
+93 239
+102 228
+28 155
+25 110
+173 235
+155 192
+166 269
+90 193
+127 281
+45 112
+49 205
+7 73
+193 268
+27 196
+84 237
+90 145
+86 243
+80 165
+51 202
+44 118
+19 156
+19 191
+156 191
+33 180
+93 241
+241 256
+157 181
+39 178
+166 270
+63 200
+64 121
+203 267
+97 125
+273 274
+136 186
+133 138
+74 222
+64 162
+82 162
+82 161
+135 222
+93 226
+182 189
+42 245
+118 291
+115 127
+121 228
+195 256
+269 273
+269 281
+273 281
+64 189
+241 281
+21 104
+7 167
+80 106
+50 85
+91 278
+73 82
+13 63
+97 276
+146 244
+146 253
+18 244
+244 253
+244 289
+18 253
+18 289
+18 118
+79 95
+85 185
+80 236
+164 195
+99 133
+76 186
+76 136
+81 121
+30 82
+244 254
+86 132
+132 247
+243 247
+86 247
+53 277
+93 126
+14 133
+177 245
+177 243
+243 245
+234 261
+12 21
+45 269
+48 256
+18 105
+91 199
+121 145
+145 185
+121 185
+97 236
+228 240
+76 234
+76 261
+81 145
+10 118
+177 263
+190 234
+152 236
+;
+0 , Tim Roth
+1 , Antonio Banderas
+2 , Bruce Willis
+3 , Emilio Estevez
+4 , Cuba Gooding Jr.
+5 , Jeremy Piven
+6 , Albert Brooks
+7 , Willem Dafoe
+8 , Geoffrey Rush
+9 , Eric Bana
+10 , Tom Hanks
+11 , Gary Sinise
+12 , Kevin Spacey
+13 , Chris Cooper
+14 , Gary Oldman
+15 , Ian Holm
+16 , Chris Tucker
+17 , Alfred Molina
+18 , Mark Ruffalo
+19 , Johnny Depp
+20 , Orlando Bloom
+21 , Jamie Foxx
+22 , Jake Gyllenhaal
+23 , Peter Sarsgaard
+24 , John Krasinski
+25 , Martin Sheen
+26 , Marlon Brando
+27 , Robert Duvall
+28 , Laurence Fishburne
+29 , Harrison Ford
+30 , Dennis Hopper
+31 , Charlie Sheen
+32 , Clint Eastwood
+33 , Gene Hackman
+34 , Morgan Freeman
+35 , Richard Harris
+36 , Kelsey Grammer
+37 , Jim Carrey
+38 , Elijah Wood
+39 , Bill Nighy
+40 , Viggo Mortensen
+41 , Ed Harris
+42 , Brad Pitt
+43 , Christopher Plummer
+44 , Richard Jenkins
+45 , Robert De Niro
+46 , Tom Cruise
+47 , Tim Robbins
+48 , Channing Tatum
+49 , Jack Nicholson
+50 , Pierce Brosnan
+51 , Danny DeVito
+52 , Michael J. Fox
+53 , Jack Black
+54 , Guy Pearce
+55 , Joe Pantoliano
+56 , Rutger Hauer
+57 , Colin Farrell
+58 , Dan Aykroyd
+59 , Sean Connery
+60 , Eddie Murphy
+61 , Damon Wayans
+62 , Billy Bob Thornton
+63 , Ben Affleck
+64 , Steve Buscemi
+65 , Michael Clarke Duncan
+66 , Peter Stormare
+67 , Owen Wilson
+68 , Jason Isaacs
+69 , Russell Crowe
+70 , Joaquin Phoenix
+71 , Djimon Hounsou
+72 , Jean Reno
+73 , Harvey Keitel
+74 , Christopher Lloyd
+75 , Billy Zane
+76 , Jason Statham
+77 , Al Pacino
+78 , Robert Loggia
+79 , Jeff Bridges
+80 , John Goodman
+81 , Philip Seymour Hoffman
+82 , John Turturro
+83 , Sam Elliott
+84 , Kevin Costner
+85 , Christopher Lee
+86 , Ian McKellen
+87 , Hugo Weaving
+88 , Andy Serkis
+89 , George Clooney
+90 , Bill Murray
+91 , Michael Shannon
+92 , Patrick Swayze
+93 , Seth Rogen
+94 , Heath Ledger
+95 , Randy Quaid
+96 , Nick Nolte
+97 , Giovanni Ribisi
+98 , Christian Bale
+99 , Michael Caine
+100 , Aaron Eckhart
+101 , Matt Damon
+102 , Casey Affleck
+103 , Scott Caan
+104 , Bernie Mac
+105 , Don Cheadle
+106 , Alan Arkin
+107 , Vincent Cassel
+108 , Danny Glover
+109 , Bill Paxton
+110 , Christian Slater
+111 , Cary Elwes
+112 , Robin Williams
+113 , Tommy Lee Jones
+114 , Lloyd Bridges
+115 , Forest Whitaker
+116 , Max von Sydow
+117 , Tobey Maguire
+118 , Samuel L. Jackson
+119 , Michael Keaton
+120 , Ben Kingsley
+121 , Stanley Tucci
+122 , Clive Owen
+123 , Mickey Rourke
+124 , Michael Madsen
+125 , Josh Brolin
+126 , Joseph Gordon-Levitt
+127 , Ray Liotta
+128 , Ron Perlman
+129 , Mel Gibson
+130 , Brendan Gleeson
+131 , Brian Cox
+132 , Patrick Stewart
+133 , Tom Hardy
+134 , Ray Winstone
+135 , John Hurt
+136 , Arnold Schwarzenegger
+137 , Matt Dillon
+138 , Mark Strong
+139 , Nicolas Cage
+140 , Chris Penn
+141 , Kiefer Sutherland
+142 , Richard Dreyfuss
+143 , John Cusack
+144 , James Caan
+145 , Woody Harrelson
+146 , Robert Downey Jr.
+147 , Tom Sizemore
+148 , Rodney Dangerfield
+149 , Michael Douglas
+150 , Adrien Brody
+151 , Jerry Lewis
+152 , Liam Neeson
+153 , Anthony Hopkins
+154 , Ted Levine
+155 , William H. Macy
+156 , Michael Sheen
+157 , Ralph Fiennes
+158 , Steve Carell
+159 , James Woods
+160 , Joe Pesci
+161 , Christopher Walken
+162 , James Gandolfini
+163 , Val Kilmer
+164 , Sean Penn
+165 , Kevin Bacon
+166 , David Koechner
+167 , Sam Neill
+168 , Jeff Goldblum
+169 , Pete Postlethwaite
+170 , Vince Vaughn
+171 , John C. Reilly
+172 , Gabriel Byrne
+173 , Dustin Hoffman
+174 , Denzel Washington
+175 , Kevin Kline
+176 , Colin Firth
+177 , James McAvoy
+178 , Michael Gambon
+179 , John Leguizamo
+180 , Dennis Quaid
+181 , Rhys Ifans
+182 , Peter Dinklage
+183 , Leonardo DiCaprio
+184 , Paul Rudd
+185 , Donald Sutherland
+186 , Sylvester Stallone
+187 , Gene Wilder
+188 , John Malkovich
+189 , Sam Rockwell
+190 , Kurt Russell
+191 , Alan Rickman
+192 , Alec Baldwin
+193 , John Candy
+194 , Sam Worthington
+195 , Ben Stiller
+196 , Robert Redford
+197 , Edward Norton
+198 , Leslie Nielsen
+199 , James Franco
+200 , J.K. Simmons
+201 , Thomas Haden Church
+202 , Billy Crystal
+203 , John Michael Higgins
+204 , Ewan McGregor
+205 , Jeff Daniels
+206 , Gregory Peck
+207 , Will Smith
+208 , Daniel Craig
+209 , Rick Moranis
+210 , Frank Langella
+211 , Chazz Palminteri
+212 , Paul Newman
+213 , Jude Law
+214 , Kenneth Branagh
+215 , Jon Voight
+216 , John Travolta
+217 , Ving Rhames
+218 , Matthew McConaughey
+219 , Jack Lemmon
+220 , Gerard Butler
+221 , Michael Imperioli
+222 , Tim Curry
+223 , Rob Schneider
+224 , Greg Kinnear
+225 , Daniel Day-Lewis
+226 , Rainn Wilson
+227 , Tom Berenger
+228 , Liev Schreiber
+229 , Mike Myers
+230 , John Lithgow
+231 , Will Ferrell
+232 , Walter Matthau
+233 , Ty Burrell
+234 , Vin Diesel
+235 , Paul Giamatti
+236 , Mark Wahlberg
+237 , James Gammon
+238 , Martin Lawrence
+239 , Justin Long
+240 , Seann William Scott
+241 , Will Arnett
+242 , Sacha Baron Cohen
+243 , Hugh Jackman
+244 , Chris Evans
+245 , Michael Fassbender
+246 , Steve Zahn
+247 , James Marsden
+248 , Jeremy Irons
+249 , Elias Koteas
+250 , Javier Bardem
+251 , Oliver Platt
+252 , Steve Martin
+253 , Jeremy Renner
+254 , Idris Elba
+255 , Richard Gere
+256 , Jonah Hill
+257 , Brendan Fraser
+258 , Wesley Snipes
+259 , Jackie Earle Haley
+260 , Jon Favreau
+261 , Dwayne Johnson
+262 , John Ritter
+263 , Bill Hader
+264 , Adam Sandler
+265 , Matthew Perry
+266 , Ryan Reynolds
+267 , Eugene Levy
+268 , Chevy Chase
+269 , Bradley Cooper
+270 , Jason Bateman
+271 , Burt Reynolds
+272 , Mandy Patinkin
+273 , Ed Helms
+274 , Rob Corddry
+275 , Ryan Gosling
+276 , Luke Wilson
+277 , Jason Segel
+278 , Jeffrey Dean Morgan
+279 , James Garner
+280 , Clark Gable
+281 , Zach Galifianakis
+282 , Chris Pine
+283 , Chris Farley
+284 , Ryan Stiles
+285 , Humphrey Bogart
+286 , Jon Cryer
+287 , Michael C. Hall
+288 , Larry David
+289 , Tom Hiddleston
+290 , Dudley Moore
+291 , Christoph Waltz
+292 , Jean Dujardin
+293 , Sharlto Copley
